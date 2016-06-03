@@ -1,0 +1,43 @@
+        <tr>
+            <td><strong>{{ timestamp}}</strong></td>
+                <td>
+                    {% if uuidbool %}
+                        <strong>
+                    {% endif %}
+                            {{fields['uuid'] }}
+                    {% if uuidbool %}
+                        </strong>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if levelbool %}
+                        <strong>
+                    {% endif %}
+                            {{fields['level'] }}
+                    {% if levelbool %}
+                        </strong>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if status_codebool %}
+                        <strong>
+                    {% endif %}
+                            {{fields['status_code'] }}
+                    {% if status_codebool %}
+                        </strong>
+                    {% endif %}
+                </td>
+                <td> {{fields['content_type'] }}</td>
+                <td> {{fields['path'] }}</strong></td>
+                <td>
+                    {% if methodbool %}
+                        <strong>
+                    {% endif %}
+                            {{fields['method'] }}
+                    {% if methodbool %}
+                        </strong>
+                    {% endif %}
+                </td>
+                <td> {{fields['name'] }}</td>
+            <td><strong>{{ message }}</strong></td>
+        </tr>
